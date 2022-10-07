@@ -1,4 +1,8 @@
 import axios from 'axios';
+import express from 'express';
+
+// using express
+const app = express();
 
 const getCountries = async (currencyCode) => {
   try {
