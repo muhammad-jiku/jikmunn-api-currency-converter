@@ -15,8 +15,8 @@ const getCountries = async (currencyCode) => {
 
     return response.data.map((country) => country.name.common);
   } catch (error) {
-    console.log(error);
-    console.log(error?.message);
+    // console.log(error);
+    // console.log(error?.message);
     throw new Error(`Unable to get countries that use ${currencyCode}`);
   }
 };
